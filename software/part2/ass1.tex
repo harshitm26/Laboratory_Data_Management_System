@@ -1,0 +1,49 @@
+\documentclass {article}
+\usepackage{amssymb}
+\begin {document}
+\title{\textbf{Laboratory Data Management System}}
+\author{Harshit Maheshwari\\N V Subba Rao\\[0.5cm]
+\small{under the guidance of}\\ Prof. T.V. Prabhakar}
+\date{August 23, 2013}
+\maketitle
+\newpage
+%\tableofcontents
+\newpage
+%\section {Answer 1}
+%\subsection{(a)}
+\flushleft{
+\LARGE{\textbf{User Stories}}\\[0.5cm]
+\normalsize{
+The users of the Laboratory Data Management System will consist of the following roles:
+\begin{itemize}
+	\item Researcher
+	\item Principal Investigator(PI)
+	\item Administrator
+\end{itemize}
+We have collected the following user stories\footnotemark[1]:
+\begin{enumerate}
+	\item As a laboratory researcher, since security is a primary concern, the credentials of the user should be verified before he accesses the system. 
+	\item As a user, for ease of access, I would like to have:
+		\begin{itemize}
+			\item \textbf{User Generic Tab:} Common data/protocols that can be viewed or modified by anyone.
+			\item \textbf{User Specific Tab:} The data here can be modified only by the owner.
+		\end{itemize}
+	\item All the content present in the system should be readable by all and can be searched with the following options:
+		\begin{itemize}
+			\item Search by researcher/experimenter's name 
+			\item Search by experiment name or experiment id
+			\item Search by keywords in the experiment 
+		\end{itemize}
+		The above search criteria can be used for searching entire articles or only images. 
+	\item As a researcher, I would like to have exclusive permission to modify the data added by me. 
+	\item As a researcher, I would like to ensure that all the revisions/edits made by any researcher should have associated timestamps to maintain the integrity of the data. 
+	\item As a Principal Investigator, I want the privilege to approve or disapprove the data collected, modifications made to the protocols\footnotemark[2] or notes added to the protocols by lab researchers. 
+	\item As an administrator I want the permission to create or delete accounts of users in the system. 
+\end{enumerate}
+\footnotetext[1]{We have used the \textbf{INVEST} model to ensure that all the user stories are independent, negotiable, valuable, estimable, small and testable }
+\footnotetext[2]{A protocol is a standard procedure prescribed to carry out an experiment.}
+}}
+
+
+\end{document}
+

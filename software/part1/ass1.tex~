@@ -1,0 +1,98 @@
+\documentclass {article}
+\usepackage{amssymb}
+\begin {document}
+\title{Assignment \#1}
+\author{Harshit Maheshwari}
+\date{August 15,2012}
+\maketitle
+\newpage
+%\tableofcontents
+\newpage
+%\section {Answer 1}
+%\subsection{(a)}
+\flushleft{
+\LARGE{\textbf{Answers}}\\[1cm]
+\normalsize{
+1 (a).\\[0.5cm]
+A request occurs: R \\
+Eventually request is acknowledged: A\\
+Request is able to make progress: P\\[0.2cm]
+$R\rightarrow A\vee\lnot P$\\[1cm]
+ }}
+1 (b). \\[0.5cm]
+Today it will rain: R\\
+Today it will shine: S\\[0.2cm]
+$(R \vee S) \wedge \lnot(R\wedge S)$ \\[1cm]
+1(c).\\[0.5cm]
+Cancer will be cured: C\\
+Cause of cancer is dertermined: D\\
+New drug for cancer is found: N\\[0.2cm]
+$(D\wedge N)\rightarrow \lnot C$\\[1.5cm]
+
+2(a).\\[0.5cm]
+ \begin{tabbing}
+\hspace{1cm} \= 1.\quad \=$\lnot P$\hspace{5cm} \=Assumption\\
+\> 2. \> $P$ \>Assumption\\
+\> 3. \> $\perp$  \> $\lnot e$\\
+\> 4. \> $Q$	\> $\perp e$\\
+\> 5. \> $P \rightarrow Q$ \> 2. P\\
+\> 6. \> $P\rightarrow (P\rightarrow Q))$\> Discharging 3.\\
+\> 7. \> $\lnot R \rightarrow( P \rightarrow (P\rightarrow (P\rightarrow Q)))$ \> Discharging 1. $\square$\\[1cm]
+\end{tabbing}
+2(b).\\[0.5cm]
+\begin{tabbing}
+\hspace{1cm} \=1. \quad \= $\lnot P \vee Q$\hspace{5cm}\=Assumption\\
+\>2. \> $\lnot P$ \> Assumption\\
+\>3. \> $P$ \>Assumption\\
+\>4. \> $\perp$ \> $\lnot e$\\
+\>5. \> $Q$\> $\lnot e$\\
+\>6. \> $P \rightarrow Q$\> Discharging 3. \\
+\>7. \> $Q$\>Assumption\\
+\>8. \> $P$ \>Assumption\\
+\>9. \> $P \rightarrow Q$ \> \\
+\> 10. \> $ \lnot P \vee Q \rightarrow (P \rightarrow Q) $\> Discharging 3. and 7.$\square$ \\[1cm]
+ \end{tabbing}
+
+2(c). \\[0.5cm]
+\begin{tabbing}
+\hspace{1cm}\=1. \quad \= $ P \wedge Q \rightarrow R $ \hspace{5cm} \=Premise \\
+\>2.\> P \> Assumption \\
+\>3. \> Q \>Assumption \\
+\> 4. \> P $ \wedge\ $ Q \> $\wedge $ I\\
+\>5. \> R \> $\rightarrow$ E \\
+\> 6. \> $ P \rightarrow R $ \> Discharging 2. \\
+\> 7. \> $Q \rightarrow R $ \>Discharging 3. \\
+\>8. \> $ ( P \rightarrow Q ) \vee ( Q \rightarrow R) $ \> From 6.and 7. $\square$ \\[1cm] 
+\end{tabbing}
+
+2(d). \\[0.5 cm]
+\begin {tabbing}
+\hspace {1cm } \=1. \quad \= $ P \wedge Q $ \hspace{5cm} \=Premise\\
+\>2. \> $ ( \lnot P \vee \lnot Q )$ \>Assumption  \\
+\>3. \> P \> $\wedge$ E from 1.  \\
+\>4. \> Q \> $\wedge $ E from 2. \\
+\>5. \> $lnot P$ \> Assumption \\
+\>6. \> $ \perp $ \> From 2. and 3. \\
+\>7. \> $lnot Q$ \> Assumption \\
+\>8. \> $\perp$ \> From 4. and 6. \\
+\>9. \> $\perp$ \> Assumption 2. \\
+\>10.  \> $\lnot (\lnot P \vee \lnot Q ) $\> From 9. $\square$\\[1cm]
+\end{tabbing}
+
+2(e). \\[0.5 cm]
+\begin {tabbing}
+\hspace {1cm} \=1. \quad \= $lnot (P \rightarrow Q)$ \hspace{5cm}\=Premise\\
+\>2. \>$\lnot P $\> Assumption \\
+\>3. \>$ P$ \>Assumption \\
+\>4. \> $\perp$ \> From 2. and 3. \\
+\>5. \>$Q$ \> $\perp$ E\\
+\>6. \> $ ( P \rightarrow Q )$ \> Discharging 3. \\
+\>7. \> $ Q $ \> Assumption \\
+\>8. \> $P$ \> Assumption \\
+\>9. \> $ (P \rightarrow Q)$ \> Discharging 8. \\
+\> 10. \> $ ( P \rightarrow Q )$ \> Discharging  2. and 7.  \\
+\> 11. \> $\perp$ \> From 1. and 10. \\
+\> 12. \> $P \wedge \lnot Q $\> $\perp$ E $\square$ \\
+\end{tabbing}
+\end{document}
+
